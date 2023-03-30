@@ -1,0 +1,25 @@
+/*
+ * achuankou.h
+ *
+ *  Created on: May 13, 2020
+ *      Author: Administrator
+ */
+
+#ifndef INC_ACHUANKOU_H_
+#define INC_ACHUANKOU_H_
+
+
+
+
+
+
+void duankou1qingchu(void);
+void duankou1xunhuan(void);
+
+uint8_t chuankoufasongzi(uint8_t);
+uint8_t* chuankoufasongshuzi(int32_t);
+void chuankoufasong(uint8_t,uint32_t);
+
+//void xianshishuju(uint16_t ,uint8_t *,uint32_t );
+
+#endif /* INC_ACHUANKOU_H_ */

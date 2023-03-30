@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;stm32f401cdu6/Core/abujindianjipwm&apos;" deleteContents="false" description="Delete resource &apos;stm32f401cdu6/Core/abujindianjipwm&apos;" element1="/stm32f401cdu6/Core/abujindianjipwm" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1679477285575"/>&#x0A;<refactoring comment="Delete resource &apos;stm32f401cdu6&apos;" deleteContents="false" description="Delete resource &apos;stm32f401cdu6&apos;" element1="/stm32f401cdu6" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1679569649884"/>
+</session>
