@@ -1,4 +1,23 @@
 # Robotic-Arm-Control
+
+Robotic arm motion control algorithm.
+
+Today is March 27, 2023. I want to make a set of control algorithms for the robotic arm, and let it run on a single-chip microcomputer with relatively low computing power. Here, it is mainly to study the algorithm. There is no requirement for what type of microcontroller to use. I will use the STM32 series for testing.
+
+Task goal, read G code, or input a position coordinates through external interface (currently, it is mainly designed with coordinates input by external system in real time). A complete set of control system that controls the robotic arm to reach the designated target along the predetermined route and speed. The control system is divided into 3 chapters, and each chapter corresponds to a different controller, (I don't want to concentrate all operations on a single-chip microcomputer, but I hope to divide them into different functions and complete their own calculations)
+
+Chapter 1: Coordinate controller, which reads the absolute coordinate data from the outside and sends out the calculated data
+
+1.0.1 Read the external coordinates, run speed information, and calculate the position where the robot arm should be in each time period. Usually 3-axis (xyz) or 6-axis (xyzabc). This is the calculation of the absolute position in space, where the input position parameter is necessary, and the velocity parameter is secondary. The path from the current position to the target position is generally a straight line between two points. Of course, it can also be an arc or other splines. In the first stage of the program, I will still use linear interpolation. First of all, different types of robotic arms have their own characteristics, at least the maximum operating speed and acceleration. The single-chip microcomputer needs to know its current position, running direction and running speed in real time. After reading the new coordinate position, the next running direction and speed of the robotic arm can be obtained through calculation. If the robot arm is at rest when the coordinate position is received, it will draw a straight line from the current position to the target position, and calculate the position where the robot arm should be in each time period, and send this position coordinate to the next The position coordinates of the processing module need to ensure interpolation accuracy and control of acceleration and deceleration.
+
+The above is the working content of this module.
+
+Chapter 2: In this chapter, the inverse solution controller will use different inverse solution algorithms for different types of manipulators. The inverse solution controller receives the data from the coordinate controller, and after inverse solution calculation, outputs the corresponding angle of each motor, and transmits it to each motor controller through the interface.
+
+Chapter 3: Motor pulse controller here mainly receives data from the inverse controller, converts the data into the actual position and speed of the motor to control the rotation of the motor, but this is not the part that actually controls the motor MOS tube, the motor pulse controller Just output pulse and direction signal
+
+Chapter 4: Motor Driver The driver receives the signal from the pulse controller, converts the signal and controls the motor directly. (This part does not need to be manufactured, and the corresponding driver should be matched when purchasing a servo motor or a stepper motor)
+
 机械臂运动控制算法。
 
 今天是2023年3月27日
@@ -33,6 +52,8 @@
 电机脉冲控制器
 这里主要接收来自逆解控制器的数据，将数据转换成电机实际位置和速度之后去控制电机的转动
 但是这里还不是真正控制电机MOS管的部分，电机脉冲控制器只是输出脉冲和方向信号
+
+
 
 第四章：
 电机驱动器
