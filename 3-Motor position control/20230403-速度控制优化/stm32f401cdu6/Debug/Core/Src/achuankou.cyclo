@@ -1,0 +1,11 @@
+achuankou.c:19:7:duqu	1
+achuankou.c:30:7:shujuduqu	9
+achuankou.c:77:7:shujuxieru	2
+achuankou.c:89:10:duankoupanduan	8
+achuankou.c:121:6:duankou1qingchu	2
+achuankou.c:132:6:duankou1xunhuan	3
+achuankou.c:149:6:USART1_IRQHandler	2
+achuankou.c:176:9:chuankoufasongzi	1
+achuankou.c:188:10:chuankoufasongshuzi	4
+achuankou.c:218:6:chuankoufasong	1
+achuankou.c:227:10:modbus_crc16	4
