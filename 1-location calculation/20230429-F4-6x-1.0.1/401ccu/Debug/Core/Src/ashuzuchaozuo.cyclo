@@ -1,0 +1,14 @@
+ashuzuchaozuo.c:24:9:xunzhaoshuzuuint8_t	9
+ashuzuchaozuo.c:47:9:xunzhaoshuzuuint16_t	9
+ashuzuchaozuo.c:71:9:xunzhaoshuzuuint32_t	9
+ashuzuchaozuo.c:100:9:qushuzuyoubianuint8_t	5
+ashuzuchaozuo.c:111:9:qushuzuyoubianuint16_t	5
+ashuzuchaozuo.c:123:9:qushuzuyoubianuint32_t	5
+ashuzuchaozuo.c:138:9:wenbendaoshuzi	6
+ashuzuchaozuo.c:171:10:shuzidaowenben	4
+ashuzuchaozuo.c:201:10:shuzidaowenben2	7
+ashuzuchaozuo.c:238:10:hebingshuzu	3
+ashuzuchaozuo.c:255:9:qushuziweishu	5
+ashuzuchaozuo.c:274:6:reverse	2
+ashuzuchaozuo.c:290:5:intToStr	3
+ashuzuchaozuo.c:313:10:ftoa	4

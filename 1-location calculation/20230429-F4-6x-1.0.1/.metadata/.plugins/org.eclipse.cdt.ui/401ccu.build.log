@@ -1,0 +1,10 @@
+11:07:59 **** Incremental Build of configuration Debug for project 401ccu ****
+make -j8 all 
+arm-none-eabi-size   401ccu.elf 
+   text	   data	    bss	    dec	    hex	filename
+  49952	    364	   7768	  58084	   e2e4	401ccu.elf
+Finished building: default.size.stdout
+ 
+
+11:07:59 Build Finished. 0 errors, 0 warnings. (took 703ms)
+
